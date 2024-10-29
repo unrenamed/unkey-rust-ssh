@@ -1,0 +1,30 @@
+[package]
+name = "unkey-rust-ssh"
+version = "0.1.0"
+edition = "2021"
+authors = ["unrenamed <renkonazbka@gmail.com>"]
+description = """
+A simple template of an echoserver with built-in API key verification using 
+the Unkey service
+"""
+readme = "README.md"
+license-file = "LICENSE"
+homepage = "https://github.com/unrenamed/unkey-rust-ssh"
+repository = "https://github.com/unrenamed/unkey-rust-ssh"
+keywords = ["unkey", "ssh", "chat", "echoserver"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+futures = "0.3.30"
+russh = { version = "0.45.0" }
+russh-keys = { version = "0.45.0" }
+russh-sftp = "2.0.5"
+tokio = { version = "1.36.0", features = ["io-std"] }
+anyhow = "1.0.79"
+async-trait = "0.1.77"
+log = "0.4.20"
+env_logger = "0.11"
+unkey = "0.5.0"
+dotenv = "0.15"
+lazy_static = "1.5.0"
+serde = "1.0.214"
